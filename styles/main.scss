@@ -1,0 +1,83 @@
+@import "./base/reset";
+@import "./base/fonts";
+
+@import "./components/buttons";
+
+// @import "./layout/challengeLayout";
+// @import "./layout/card";
+
+body{
+  background:#111;
+}
+.cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.cta1{
+  color:red;
+  z-index: 1;
+  //down
+}
+.cta2{
+  color:blue;
+  //down
+}
+.cta3{
+  color:teal;
+  opacity: 0;
+  //down
+}
+.cta4{
+  color:gold;
+  //up
+}
+.cta5{
+  color:purple;
+}
+.cta6{
+  color:hotpink;
+  opacity: 0;
+  //up
+}
+
+
+.cta-text {
+  display: flex;
+  font-size: 2rem;
+  
+
+  h2 {
+    // overflow: hidden;
+   
+   
+  }
+  span {
+    font-size:4rem;
+    display: block;
+    padding: 0rem 0.4rem;
+    // border:1px solid red;
+    // text-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px;
+  }
+}
+
+.cta-btn {
+  margin: 5rem;
+  padding: 0.5rem 2rem;
+  background-color: white;
+  border-radius: 0.3rem;
+  color: rgb(33, 33, 33);
+  border: none;
+  font-size: 0.7rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
